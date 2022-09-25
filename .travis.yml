@@ -13,7 +13,7 @@ only:
   
 script:
   - docker pull yukonlago/bdd-test
-  - docker run -v $PWD/:/app/report/ yukonlago/bdd-test
+  - docker run -v $PWD/:/app/report/yukonlago/bdd-test
 
 after_script:
   - bash ./telegram_notification.sh
